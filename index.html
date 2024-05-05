@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <textarea id="inputTextArea" class="text-area" placeholder="Enter text to translate"></textarea>
+        <div class="input">
+            <textarea id="inputTextArea" class="text-area" placeholder="Enter text to translate"></textarea>
         <div class="dropdown-container">
             <label for="sourceLanguage">Source Language:</label>
             <select id="sourceLanguage" class="dropdown">
@@ -21,9 +22,12 @@
                 <option value="zh-CN">Chinese</option>
             </select>
         </div>
+        </div>
+        <div class="output">
         <div class="dropdown-container">
             <label for="targetLanguage">Target Language:</label>
-            <select id="targetLanguage" class="dropdown">
+            <select id="targetLanguage" class="dropdown" >
+                <option value="#">Select language</option>
                 <option value="en">English</option>
                 <option value="fr">French</option>
                 <option value="es">Spanish</option>
@@ -34,6 +38,7 @@
         </div>
         <button id="translateButton" class="btn-grad">Translate</button>
         <textarea id="translatedTextArea" class="text-area" placeholder="Translated text"></textarea>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
